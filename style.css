@@ -1,0 +1,109 @@
+/* Html Body Design */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(79, 9, 160);
+    font-family: sans-serif;
+}
+
+/* Login Box Design */
+h3{
+    color: whitesmoke;
+    font: message-box;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate3d(-50%, -50%, -20%);
+    background-color: rgb(49, 5, 14);
+    text-align: center;
+}
+
+.box input[type = "text"], .box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(110, 18, 63);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: wheat;
+    border-radius: 24px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box input[type = "text"]:focus , .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: rgb(110, 18, 49);
+}
+
+.box input[type = "button"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(197, 30, 8);
+    padding: 14px 40px;
+    width: 120px;
+    outline: none;
+    color: wheat;
+    border-radius: 24px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+
+.box input[type = "button"]:hover{
+    background: rgb(197, 30, 8);
+}
+
+
+
+
+
+/* MOdal Pop-up Design*/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
